@@ -152,7 +152,7 @@ body{
   width: 200px;
   height: 15%;
   top: 22%;
-  left: calc(50% - -50px); /* espace entre les image et le centre */
+  left: calc(50% - -50px); 
   transform-style: preserve-3d;
   transform: perspective(1000px);
   animation: autoRun 25s linear infinite;
@@ -171,10 +171,10 @@ body{
 .fond .slider .item {
   position: absolute;
   inset: 0 0 0 0;
-  --quantity: 4; /*  quantité d'items*/
+  --quantity: 5; /*  quantité d'items*/
   transform: 
       rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
-      translateZ(350px);
+      translateZ(350px);  /* espace entre les image et le centre */
 }
       
 
@@ -196,4 +196,69 @@ body{
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+
+.github{
+  width: 85px;
+  height: 85px;
+  background-color: aliceblue;
+  position: absolute;
+  top: 275px;
+  right: 280px;
+  border-radius: 50px;
+  box-shadow: 
+      0 0 20px rgba(255, 255, 255, 0.5), 
+      0 0 30px rgba(255, 255, 255, 0.5), 
+      0 0 40px rgba(255, 255, 255, 0.5), 
+      0 0 50px rgba(255, 255, 255, 0.7); 
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: float 3s ease-in-out infinite;
+}
+
+.linkedin{
+  width: 85px;
+  height: 85px;
+  background-color: aliceblue;
+  position: absolute;
+  top: 275px;
+  left: 448px;
+  border-radius: 50px;
+  box-shadow: 
+      0 0 20px rgba(255, 255, 255, 0.5), 
+      0 0 30px rgba(255, 255, 255, 0.5), 
+      0 0 40px rgba(255, 255, 255, 0.5), 
+      0 0 50px rgba(255, 255, 255, 0.7); 
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-30px); /* modifier hauteur du flottement */
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.git{
+  width: 40px;
+  border-radius: 20px;
+}
+
+.lkdn{
+  
+    width: 40px;
+    border-radius: 20px;
+  
 }

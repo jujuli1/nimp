@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../App.css'
 import foret from "../images/foret.png"
 import Moine from "../images/moine.jpg"
@@ -41,11 +42,11 @@ const Parallax = () => {
         <div className='fond'>
         
         <div className='slider'>
-                <div className='item' style={{ "--position": 1, color: "rgba(22, 11, 119, 1)", fontSize: "70px", textShadow: "2px 2px 15px rgba(22, 11, 119, 1)" }}>JS</div>
-                <div className='item' style={{ "--position": 3, color: "rgba(22, 11, 119, 1)", fontSize: "70px", textShadow: "2px 2px 15px rgba(22, 11, 119, 1)" }}>Python</div>
-                <div className='item' style={{ "--position": 2, color: "rgba(22, 11, 119, 1)", fontSize: "70px", textShadow: "2px 2px 15px rgba(22, 11, 119, 1)"  }}>SQL</div>
-                
-                <div className='item' style={{ "--position": 4, color: "rgba(22, 11, 119, 1)", fontSize: "70px", textShadow: "2px 2px 15px rgba(22, 11, 119, 1)" }}>FireBase</div>
+                <div className='item' style={{ "--position": 1, fontSize: "70px", textShadow: "2px 2px 15px rgba(255, 255, 255, 0.5)" }}>JS</div>
+                <div className='item' style={{ "--position": 3, fontSize: "70px", textShadow: "2px 2px 15px rgba(255, 255, 255, 0.5)" }}>Python</div>
+                <div className='item' style={{ "--position": 2, fontSize: "70px", textShadow: "2px 2px 15px rgba(255, 255, 255, 0.5)" }}>SQL</div>
+                <div className='item' style={{ "--position": 5, fontSize: "70px", textShadow: "2px 2px 15px rgba(255, 255, 255, 0.5)" }}>React</div>
+                <div className='item' style={{ "--position": 4, fontSize: "70px", textShadow: "2px 2px 15px rgba(255, 255, 255, 0.5)" }}>FireBase</div>
 
              
                 
@@ -59,6 +60,8 @@ const Parallax = () => {
                 
                 <div className='model'><img className='moine' src={Moine}/></div>
             </div>
+            <div className='linkedin'><a href='https://www.linkedin.com/in/julien-lefevre-6bab8255'><img className='lkdn' src="https://cdn-icons-png.flaticon.com/512/174/174857.png"/></a></div>
+            <div className='github'><a href='https://github.com/jujuli1?tab=repositories'><img className='git' src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"/></a></div>
         </div>
         </div>
 
