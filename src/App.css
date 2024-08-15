@@ -1,38 +1,199 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  height: 300vh;
+  background-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  width: 100%;
+  background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) ,url("./images/Orage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: aliceblue;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.App-link {
-  color: #61dafb;
+.content{
+  padding: 40px;
+  box-sizing: border-box;
+  margin-top: -446px;
+  display: flex;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.foret{
+  
+  margin-left: -3%;
+  filter: brightness(15%);
+  margin-right: -66px;
+}
+.foret2{
+  filter: brightness(15%);
+  margin-right: -66px;
+}
+.foret3{
+  filter: brightness(15%);
+  margin-right: -66px;
+}
+.foret4{
+  filter: brightness(15%);
+}
+
+
+.lumiere{
+  width: 40%;
+  background-color: #222; 
+  box-shadow: 
+      0 0 20px rgba(255, 255, 255, 0.5), 
+      0 0 30px rgba(255, 255, 255, 0.5), 
+      0 0 40px rgba(255, 255, 255, 0.5), 
+      0 0 50px rgba(255, 255, 255, 0.7); 
+  border-radius: 250px; 
+  margin: 50px auto; 
+}
+
+.stars {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.light {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin-left: 100px;
+  border-radius: 250px;
+  box-shadow: 
+      0 0 20px rgba(255, 255, 255, 0.5), 
+      0 0 30px rgba(255, 255, 255, 0.5), 
+      0 0 40px rgba(255, 255, 255, 0.5), 
+      0 0 50px rgba(255, 255, 255, 0.7); 
+  background-color: #222;
+}
+
+.light:nth-child(1) {
+  top: 10%;
+  left: 15%;
+}
+
+.light:nth-child(2) {
+  top: 30%;
+  left: 70%;
+}
+
+.light:nth-child(3) {
+  top: 50%;
+  left: 40%;
+  width: 20px;
+  height: 20px;
+}
+
+.light:nth-child(4) {
+  top: 70%;
+  left: 35%;
+  width: 20px;
+  height: 20px;
+}
+
+.light:nth-child(5) {
+  top: 90%;
+  left: 35%;
+  width: 30px;
+  height: 30px;
+}
+
+.light:nth-child(6) {
+  top: 115%;
+  left: 45%;
+  width: 40px;
+  height: 40px;
+}
+
+.light:nth-child(7) {
+  top: 130%;
+  left: 35%;
+  width: 40px;
+  height: 40px;
+}
+
+.fond{
+  position: absolute;
+  top: 140%;
+  left: 40%;
+  
+}
+
+.moine {
+  border-radius: 271px;
+  width: 300px;
+  box-shadow: 
+      0 0 20px rgba(255, 255, 255, 0.5), 
+      0 0 30px rgba(255, 255, 255, 0.5), 
+      0 0 40px rgba(255, 255, 255, 0.5), 
+      0 0 50px rgba(255, 255, 255, 0.7); 
+  overflow: hidden;
+  position: relative;
+  top: 520px;
+  left: 219%;
+}
+
+.fond .slider {
+  position: absolute;
+  width: 200px;
+  height: 15%;
+  top: 22%;
+  left: calc(50% - -50px); /* espace entre les image et le centre */
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: autoRun 25s linear infinite;
+  z-index: 2;
+}
+
+@keyframes autoRun {
+  from {                           /* angle de vue*/
+    transform: perspective(1000px) rotateX(-10deg) rotateY(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: perspective(1000px) rotateX(-10deg) rotateY(360deg);
   }
+}
+
+.fond .slider .item {
+  position: absolute;
+  inset: 0 0 0 0;
+  --quantity: 4; /*  quantité d'items*/
+  transform: 
+      rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+      translateZ(350px);
+}
+      
+
+.fond .slider .item img {
+  width: auto;
+  height: 80%;
+  object-fit: contain;
+}
+
+.fond .content{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1400px, 100vw);
+  height: max-content;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
