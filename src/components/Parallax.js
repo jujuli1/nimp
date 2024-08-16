@@ -1,12 +1,30 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
+import Modal from './Contact/Modale';
+import Contact from './Contact/Contact';
 import '../App.css'
 import foret from "../images/foret.png"
 import Moine from "../images/moine.jpg"
 const Parallax = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleModalOpen = () => {
+        setIsModalOpen(true);
+      };
+    
+      const handleModalClose = () => {
+        setIsModalOpen(false);
+      };
     return (
 
         <div>
+
+               
+         {/* Affichage de la modale */}
+      <Modal show={isModalOpen} onClose={handleModalClose}>
+        <Contact />
+      </Modal>  
 
            <div className='header'>
             <h2>Relaxing...</h2>
@@ -65,7 +83,15 @@ const Parallax = () => {
         </div>
         </div>
 
-        
+        {/**lien Me joindre */}
+           
+    <button
+          
+          className='join-bouton'
+          onClick={handleModalOpen}
+        >
+          Me joindre
+        </button>   
         
         </div>
         

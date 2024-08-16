@@ -262,3 +262,9 @@ body{
     border-radius: 20px;
   
 }
+
+.join-bouton{
+  margin-top: 45%;
+  margin-left: 10%;
+  width: 125px;
+}
