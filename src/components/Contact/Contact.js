@@ -28,11 +28,14 @@ const Contact = () => {
                 text: "Votre message à été envoyé",
                 icon: "success"
               });
+              
         }
       };
     return (
         <div>
+            
             <section className='contact'>
+            
                 <form onSubmit={onSubmit}>
                     <h2>Me Contacter</h2>
                     <div className='input-box'>
@@ -49,7 +52,7 @@ const Contact = () => {
             </div>
             <button type='submit'>Envoyer</button>
                 </form>
-
+               
             </section>
         </div>
     );

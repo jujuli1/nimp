@@ -19,11 +19,13 @@ const Parallax = () => {
     return (
 
         <div>
+            
 
                
          {/* Affichage de la modale */}
       <Modal show={isModalOpen} onClose={handleModalClose}>
-        <Contact />
+      
+      <Contact onClose={handleModalClose} /> 
       </Modal>  
 
            <div className='header'>

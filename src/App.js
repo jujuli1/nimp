@@ -8,13 +8,13 @@ function App() {
   return (
     <div className="App">
 
-<Parallax/>
+
       <BrowserRouter>
 
       <Routes>
       <Route path="/contact" element={<Contact />} />  
       </Routes>
-      
+      <Parallax/>
       
       
       </BrowserRouter>
