@@ -22,7 +22,7 @@ const Parallax = () => {
             
 
                
-         {/* Affichage de la modale */}
+         {/* affichage modale */}
       <Modal show={isModalOpen} onClose={handleModalClose}>
       
       <Contact onClose={handleModalClose} /> 
@@ -61,6 +61,8 @@ const Parallax = () => {
 
         <div className='fond'>
         
+
+        {/** élément tournant */}
         <div className='slider'>
                 <div className='item' style={{ "--position": 1, fontSize: "70px", textShadow: "2px 2px 15px rgba(255, 255, 255, 0.5)" }}>JS</div>
                 <div className='item' style={{ "--position": 3, fontSize: "70px", textShadow: "2px 2px 15px rgba(255, 255, 255, 0.5)" }}>Python</div>
@@ -92,7 +94,7 @@ const Parallax = () => {
           className='join-bouton'
           onClick={handleModalOpen}
         >
-          Me joindre
+          Me contacter
         </button>   
         
         </div>

@@ -71,18 +71,18 @@ form button:hover {
     background: #1900fffa;
 }
 
-/* Contact/Modal.css */
+
 .modal-backdrop {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Sombre pour l'arrière-plan */
+    background: rgba(0, 0, 0, 0.5); 
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Au-dessus de tout le reste */
+    z-index: 1000; 
   }
   
   .modal-content {
@@ -90,7 +90,7 @@ form button:hover {
     padding: 20px;
     border-radius: 8px;
     position: relative;
-    z-index: 1001; /* Au-dessus du backdrop */
+    z-index: 1001; 
     max-width: 500px;
     width: 100%;
     margin-bottom: 708px;

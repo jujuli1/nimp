@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from 'react';
-import './Contact.css'; // Assurez-vous que ce fichier CSS stylise correctement votre modale
+import './Contact.css'; 
 
 const Modal = ({ show, onClose, children }) => {
   const modalRef = useRef();
 
   useEffect(() => {
-    // Fermer la modale en cas de clic en dehors
+    // fermer modale en cas de clic en dehors
     const handleClickOutside = (event) => {
       if (modalRef.current && !modalRef.current.contains(event.target)) {
         onClose();

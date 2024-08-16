@@ -4,6 +4,8 @@ import Swal from 'sweetalert2'
 
 const Contact = () => {
 
+
+    {/** web3form  */}
     const onSubmit = async (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
@@ -33,7 +35,7 @@ const Contact = () => {
       };
     return (
         <div>
-            
+            {/**contenue modale de contacte */}
             <section className='contact'>
             
                 <form onSubmit={onSubmit}>
