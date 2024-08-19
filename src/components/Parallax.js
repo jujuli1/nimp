@@ -33,6 +33,7 @@ const Parallax = () => {
         </div> 
 
         <div className='content'>
+
             <div className='foret'>
             <img src={foret}alt='foret'/>
             </div>
@@ -43,8 +44,11 @@ const Parallax = () => {
             <img src={foret}alt='foret'/>
             </div>
             <div className='foret4'>
-            <img src={foret}alt='foret'/>
-            </div>
+            <img src={foret}alt='foret'/> </div>
+            
+            
+            
+            
             
             
 

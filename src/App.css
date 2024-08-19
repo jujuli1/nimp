@@ -28,6 +28,7 @@ body{
   margin-top: -446px;
   display: flex;
   
+  
 }
 
 .foret{
@@ -278,3 +279,90 @@ body{
   border-radius: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+
+  .foret{
+  
+    margin-left: -13%;
+  filter: brightness(15%);
+  
+  }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+  .fond .slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: -44px;
+  }
+
+  .fond .slider .item {
+    position: static; 
+    transform: none; 
+    transition: none; 
+    margin: 10px 0; 
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .linkedin {
+    width: 85px;
+  height: 85px;
+  background-color: aliceblue;
+  position: absolute;
+  top: 580px;
+  left: 10px;
+  border-radius: 50px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.5), 0 0 50px rgba(255, 255, 255, 0.7);
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: float 3s ease-in-out infinite;
+}
+  }
+
+  @media only screen and (max-width: 600px) {
+    .github {
+      width: 85px;
+  height: 85px;
+  background-color: aliceblue;
+  position: absolute;
+  top: 775px;
+  right: 4px;
+  border-radius: 50px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.5), 0 0 50px rgba(255, 255, 255, 0.7);
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: float 3s ease-in-out infinite;
+  }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .join-bouton {
+        margin-top: 332%;
+  margin-left: 37%;
+  width: 125px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.5), 0 0 50px rgba(255, 255, 255, 0.7);
+  color: aliceblue;
+  background-color: black;
+  border-radius: 10px;
+    }
+      }
+      @media (max-width: 600px) {
+        .contact {
+          width: 27% !important;
+    margin-left: -1% !important;
+    position: fixed;
+    top: 76%;
+        }
+      }
+
+  
+
+  

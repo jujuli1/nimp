@@ -86,15 +86,13 @@ form button:hover {
   }
   
   .modal-content {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
+    
+    
     position: relative;
     z-index: 1001; 
     max-width: 500px;
     width: 100%;
-    margin-bottom: 708px;
-  margin-left: -153px;
+    
 
   }
   
