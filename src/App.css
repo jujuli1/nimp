@@ -69,6 +69,7 @@ body{
   height: 100vh;
 }
 
+/* deco bulles*/
 .light {
   position: absolute;
   width: 10px;
@@ -135,6 +136,12 @@ body{
   
 }
 
+
+
+
+
+/* slider moine*/
+
 .moine {
   border-radius: 271px;
   width: 300px;
@@ -161,14 +168,7 @@ body{
   z-index: 2;
 }
 
-@keyframes autoRun {
-  from {                           /* angle de vue*/
-    transform: perspective(1000px) rotateX(-10deg) rotateY(0deg);
-  }
-  to {
-    transform: perspective(1000px) rotateX(-10deg) rotateY(360deg);
-  }
-}
+
 
 .fond .slider .item {
   position: absolute;
@@ -241,17 +241,7 @@ body{
   animation: float 3s ease-in-out infinite;
 }
 
-@keyframes float {
-  0% {
-      transform: translateY(0);
-  }
-  50% {
-      transform: translateY(-30px); /* modifier hauteur du flottement */
-  }
-  100% {
-      transform: translateY(0);
-  }
-}
+
 
 .git{
   width: 40px;
@@ -278,6 +268,31 @@ body{
   background-color: black;
   border-radius: 10px;
 }
+
+
+@keyframes autoRun {
+  from {                           /* angle de vue*/
+    transform: perspective(1000px) rotateX(-10deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(-10deg) rotateY(360deg);
+  }
+}
+
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-30px); /* modifier hauteur du flottement */
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+
+/*  Responsive*/
 
 @media only screen and (max-width: 600px) {
 

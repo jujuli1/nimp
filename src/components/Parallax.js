@@ -32,6 +32,7 @@ const Parallax = () => {
             <h2>Relaxing...</h2>
         </div> 
 
+        {/** Décoration foret pour effet parallax */}
         <div className='content'>
 
             <div className='foret'>
@@ -54,6 +55,7 @@ const Parallax = () => {
 
         </div>
 
+        {/** déco petite bulle */}
         <div className='stars'>
         <div className='light'></div>
         <div className='light'></div>
@@ -63,6 +65,8 @@ const Parallax = () => {
         <div className='light'></div>
         <div className='light'></div>
 
+
+        {/** élément principale : animation élément tournant + lien github et linkedin + page contacte */}
         <div className='fond'>
         
 
@@ -91,7 +95,7 @@ const Parallax = () => {
         </div>
         </div>
 
-        {/**lien Me joindre */}
+        {/**lien Me contacter */}
            
     <button
           

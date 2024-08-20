@@ -5,7 +5,7 @@ import Swal from 'sweetalert2'
 const Contact = () => {
 
 
-    {/** web3form  */}
+    {/** web3form : message de validation d'envoi du message*/}
     const onSubmit = async (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
