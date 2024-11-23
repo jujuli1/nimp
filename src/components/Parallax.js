@@ -5,9 +5,11 @@ import Contact from './Contact/Contact';
 import '../App.css'
 import foret from "../images/foret.png"
 import Moine from "../images/moine.jpg"
+import Certif from './Certifications/Certif';
 const Parallax = () => {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isCertifOpen, setIsCertifOpen] = useState(false);
 
     const handleModalOpen = () => {
         setIsModalOpen(true);
@@ -16,6 +18,17 @@ const Parallax = () => {
       const handleModalClose = () => {
         setIsModalOpen(false);
       };
+
+      {/* Modale certifications */}
+      const openModal = () => {
+        setIsCertifOpen(true);
+    };
+
+    const closeModal = () => {
+      setIsCertifOpen(false);
+    };
+
+
     return (
 
         <div>
@@ -96,14 +109,22 @@ const Parallax = () => {
         </div>
 
         {/**lien Me contacter */}
-           
-    <button
+           <div className='Link'>
+        <button
           
           className='join-bouton'
           onClick={handleModalOpen}
         >
           Me contacter
         </button>   
+
+        <div >
+            <button className='ModalCertif' onClick={openModal}>Mes certifications</button>
+            {isCertifOpen && <Certif onClose={closeModal} />}
+        </div>
+
+           </div>
+    
         
         </div>
         

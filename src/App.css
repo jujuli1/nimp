@@ -136,7 +136,29 @@ body{
   
 }
 
+/*menu de gauche*/
 
+.Link{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-content: sp;
+  margin-left: 5%;
+}
+
+*.ModalCertif{
+  margin-left: 50px;
+  box-shadow: 
+      0 0 20px rgba(255, 255, 255, 0.5), 
+      0 0 30px rgba(255, 255, 255, 0.5), 
+      0 0 40px rgba(255, 255, 255, 0.5), 
+      0 0 50px rgba(255, 255, 255, 0.7); 
+      color: aliceblue;
+  background-color: black;
+  border-radius: 10px;
+  width: 14vh;
+}
 
 
 
@@ -258,6 +280,7 @@ body{
 .join-bouton{
   margin-top: 40%;
   margin-left: 10%;
+  margin-bottom: 30px;
   width: 125px;
   box-shadow: 
       0 0 20px rgba(255, 255, 255, 0.5), 
@@ -267,7 +290,12 @@ body{
       color: aliceblue;
   background-color: black;
   border-radius: 10px;
+
 }
+
+
+
+
 
 
 @keyframes autoRun {
@@ -290,6 +318,7 @@ body{
       transform: translateY(0);
   }
 }
+
 
 
 /*  Responsive*/
