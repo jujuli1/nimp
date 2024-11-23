@@ -5,11 +5,12 @@ import './Certif.css';
 const Certif = ({ onClose }) => {
     const [images, setImages] = useState([]);
 
-    // Charger les images depuis l'API
     useEffect(() => {
-        axios.get('http://localhost:5000/api/images')
-            .then(response => setImages(response.data))
-            .catch(error => console.error('Erreur lors de la récupération des images:', error));
+        // Récupérer les images depuis l'API
+        fetch('http://localhost:5000/api/images')
+            .then(response => response.json())
+            .then(data => setImages(data))
+            .catch(error => console.error('Erreur de récupération des images', error));
     }, []);
 
     return (
