@@ -7,7 +7,7 @@ const Certif = ({ onClose }) => {
 
     useEffect(() => {
         // Récupérer les images depuis l'API
-        fetch('https://github.com/jujuli1/nimp/blob/main/images/thm.jpg')
+        fetch('https://nimp-1.onrender.com/api/images')
             .then(response => response.json())
             .then(data => setImages(data))
             .catch(error => console.error('Erreur de récupération des images', error));
