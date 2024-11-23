@@ -6,7 +6,7 @@ const app = express();
 
 // Middleware CORS : Autorise les requêtes provenant de GitHub Pages
 app.use(cors({
-    origin: 'https://jujuli1.github.io/nimp', // Remplacez par l'URL de votre site
+    origin: 'https://nimp-1.onrender.com/api/images', // Remplacez par l'URL de votre site
 }));
 
 // Route pour servir les images statiques
