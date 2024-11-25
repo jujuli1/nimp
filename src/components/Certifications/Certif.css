@@ -60,9 +60,11 @@
 
 .images-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+  flex-direction: row;
+  gap: 80px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 6vh;
 }
 
 .image-item {
@@ -81,3 +83,67 @@
     margin-top: 10px;
 }
 
+.imgCert{
+    width: 15vh;
+    object-fit: cover;
+    cursor: pointer; /* Curseur pour indiquer que l'image est cliquable */
+    transition: transform 0.2s ease-in-out;
+}
+
+.imgCertTp{
+    width: 15vh;
+    rotate: -90deg;
+    object-fit: cover;
+    cursor: pointer; /* Curseur pour indiquer que l'image est cliquable */
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.imgCert:hover {
+    transform: scale(1.1); 
+}
+.imgCertTp:hover {
+    transform: scale(1.1); 
+    
+}
+
+.enlarged-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+.enlarged-containertp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.enlarged-img {
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.enlarged-imgtp {
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    rotate: -90deg;
+}
