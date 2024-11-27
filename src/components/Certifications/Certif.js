@@ -43,12 +43,7 @@ const Certif = ({ onClose }) => {
                         {images.map(image => (
                             <div key={image.id} className="image-item">
                                 <h3>{image.title}</h3>
-                                <img
-                                    src={`https://nimp-1.onrender.com/${image.file_path}`} // Utilisation du file_path pour afficher l'image
-                                    className="imgCert"
-                                    alt={image.title}
-                                    onClick={() => handleImageClick(`https://nimp-1.onrender.com/${image.file_path}`)} // Agrandir l'image au clic
-                                /></div>))}
+                                 {image.file_path}</div>))}
                                {/* <div className='zoom'>
                                 <img src={tp} className='imgCertTp' alt='tp' onClick={() => handleImageClicktp(tp)}/>
                                 </div>
