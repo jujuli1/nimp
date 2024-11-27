@@ -14,12 +14,12 @@ app.use(cors({
 }));
 
 // Route pour servir les images statiques
-app.use('/images', express.static(path.join(__dirname, 'public/images')));
+app.use('/Pimages', express.static(path.join(__dirname, 'public/Pimages')));
 
 // Endpoint pour lister les images
 app.get('/api/images', (req, res) => {
     const images = [
-        { id: 1, title: 'thm', url: 'https://nimp-1.onrender.com/images/thm.jpg' },
+        { id: 1, title: 'thm', url: 'https://nimp-1.onrender.com/Pimages/thm.jpg' },
       
     ];
     res.json(images);
