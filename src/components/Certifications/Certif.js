@@ -21,17 +21,17 @@ const Certif = ({ onClose }) => {
 
     const handleClose = () => {
         setEnlargedImage(null);
-        setEnlargedImagetp(null); // Réinitialise l'image affichée
+        setEnlargedImagetp(null); 
     };
     const [images, setImages] = useState([]);
 
-   {/** useEffect(() => {
+    useEffect(() => {
         // Récupérer les images depuis l'API
         fetch('https://nimp-1.onrender.com/api/images')
             .then(response => response.json())
             .then(data => setImages(data))
             .catch(error => console.error('Erreur de récupération des images', error));
-    }, []);*/} 
+    }, []);
 
     return (
         <div className='certifs'>
@@ -40,15 +40,15 @@ const Certif = ({ onClose }) => {
                     <button onClick={onClose} className="close-button">X</button>
                     <h2>Mes certifications</h2>
                     <div className="images-container">
-                        {/*{images.map(image => (
+                        {images.map(image => (
                             <div key={image.id} className="image-item">
-                                <h3>{image.title}</h3>*/}
-                                <div className='zoom'>
+                                <h3>{image.title}</h3></div>))}
+                               {/* <div className='zoom'>
                                 <img src={tp} className='imgCertTp' alt='tp' onClick={() => handleImageClicktp(tp)}/>
                                 </div>
                                 <div className='zoom'>
                                 <img src={thm} className='imgCert' alt='thm' onClick={() => handleImageClick(thm)}/>
-                                </div>
+                                </div>*/} 
                                 {enlargedImage && (
                 <div className="enlarged-container" onClick={handleClose}>
                     <img src={enlargedImage} className="enlarged-img" alt="Certification agrandie" />

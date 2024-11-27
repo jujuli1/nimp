@@ -3,10 +3,14 @@ const cors = require('cors');
 const path = require('path');
 
 const app = express();
-
+// Ajouter l'en-tête CSP pour autoriser les images provenant de votre serveur
+app.use((req, res, next) => {
+    res.setHeader("Content-Security-Policy", "default-src 'none'; img-src 'self' https://nimp-1.onrender.com");
+    next();
+});
 // Middleware CORS : Autorise les requêtes provenant de GitHub Pages
 app.use(cors({
-    origin: 'https://nimp-1.onrender.com/api/images', // Remplacez par l'URL de votre site
+    origin: 'https://jujuli1.github.io', 
 }));
 
 // Route pour servir les images statiques
