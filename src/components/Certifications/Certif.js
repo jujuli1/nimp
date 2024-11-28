@@ -43,7 +43,7 @@ const Certif = ({ onClose }) => {
                         {images.map(image => (
                             <div key={image.id} className="image-item">
                                 
-                                <img src={image.url} alt={image.title} onClick={() => handleImageClick(image.url)}/>
+                                <img src={image.url} alt={image.title} onClick={() => handleImageClick(image)}/>
                                  </div>))}
                                {/* <div className='zoom'>
                                 <img src={tp} className='imgCertTp' alt='tp' onClick={() => handleImageClicktp(tp)}/>
