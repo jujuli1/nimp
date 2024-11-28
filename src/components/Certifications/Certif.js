@@ -26,7 +26,7 @@ const Certif = ({ onClose }) => {
     const [images, setImages] = useState([]);
 
     useEffect(() => {
-        // Récupérer les images depuis l'API
+        // Récupérer les images depuis api
         fetch('https://nimp-1.onrender.com/api/images')
             .then(response => response.json())
             .then(data => setImages(data))
@@ -53,7 +53,7 @@ const Certif = ({ onClose }) => {
                                 </div>*/} 
                                 {enlargedImage && (
                 <div className="enlarged-container" onClick={handleClose}>
-                    <img src={enlargedImage} className="enlarged-img" alt="Certification agrandie" />
+                    <img src={enlargedImage.url} className="enlarged-img" alt={enlargedImage.title} />
                 </div>
                 
                 
