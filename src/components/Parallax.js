@@ -77,6 +77,17 @@ const Parallax = () => {
         <div className='light'></div>
         <div className='light'></div>
         <div className='light'></div>
+        <div className='light'></div>
+        <div className='light'></div>
+        <div className='light'></div>
+        <div className='light'></div>
+        <div className='light'></div>
+        <div className='light'></div>
+        <div className='light'></div>
+        <div className='light'></div>
+        <div className='light'></div>
+        <div className='light'></div>
+        <div className='light'></div>
 
 
         {/** élément principale : animation élément tournant + lien github et linkedin + page contacte */}

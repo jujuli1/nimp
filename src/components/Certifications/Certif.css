@@ -14,7 +14,7 @@
 
 /* Contenu de la modale */
 .modal-content2 {
-    background: black;
+    background: border-box;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 
