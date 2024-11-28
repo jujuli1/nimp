@@ -10,7 +10,7 @@ app.use((req, res, next) => {
 });
 // Middleware CORS : Autorise les requêtes provenant de GitHub Pages
 app.use(cors({
-    origin: 'https://jujuli1.github.io', 
+    origin: '*', 
 }));
 
 // Route pour servir les images statiques
