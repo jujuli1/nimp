@@ -7,11 +7,13 @@ import foret from "../images/foret.png"
 import Moine from "../images/moine.jpg"
 import Certif from './Certifications/Certif';
 import Who from './Who/who';
+import Competences from './Competences/competences';
 const Parallax = () => {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isCertifOpen, setIsCertifOpen] = useState(false);
     const [isWhoOpen, setIsWhoOpen] = useState(false);
+    const [isCompOpen, setIsCompOpen] = useState(false);
 
     {/*Modale contacte */}
     const handleModalOpen = () => {
@@ -39,6 +41,15 @@ const Parallax = () => {
   const closeModalwho = () => {
     setIsWhoOpen(false);
   };
+
+   {/* Modale compétences */}
+   const openModalComp = () => {
+    setIsCompOpen(true);
+};
+
+const closeModalComp = () => {
+  setIsCompOpen(false);
+};
 
 
     return (
@@ -137,6 +148,11 @@ const Parallax = () => {
            <div >
             <button className='Modalwho' onClick={openModalwho}>Whoami</button>
             {isWhoOpen && <Who onClose={closeModalwho} />}
+        </div>
+
+        <div >
+            <button className='Modalcomp' onClick={openModalComp}>Compétences</button>
+            {isCompOpen && <Competences onClose={closeModalComp} />}
         </div>
          
 
