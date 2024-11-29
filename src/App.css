@@ -244,7 +244,7 @@ body{
 
 .moine {
   border-radius: 271px;
-  width: 200px;
+  width: 110px;
   box-shadow: 
       0 0 20px rgba(255, 255, 255, 0.5), 
       0 0 30px rgba(255, 255, 255, 0.5), 
@@ -252,8 +252,8 @@ body{
       0 0 50px rgba(255, 255, 255, 0.7); 
   overflow: hidden;
   position: relative;
-  top: 385px;
-  left: 134vh;
+  top: 285px;
+  left: 137vh;
 }
 
 .fond .slider {
