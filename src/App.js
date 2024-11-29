@@ -6,6 +6,7 @@ import Parallax from './components/Parallax';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Contact from './components/Contact/Contact';
 import Certif from './components/Certifications/Certif';
+import Who from './components/Who/who';
 
 
 import { Canvas } from '@react-three/fiber';
@@ -29,6 +30,7 @@ function App() {
       <Routes>
       <Route path="/contact" element={<Contact />} /> 
       <Route path="/certifications" element={<Certif />} />
+      <Route path="/who" element={<Who />} />
       </Routes>
       
        

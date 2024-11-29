@@ -6,11 +6,14 @@ import '../App.css'
 import foret from "../images/foret.png"
 import Moine from "../images/moine.jpg"
 import Certif from './Certifications/Certif';
+import Who from './Who/who';
 const Parallax = () => {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isCertifOpen, setIsCertifOpen] = useState(false);
+    const [isWhoOpen, setIsWhoOpen] = useState(false);
 
+    {/*Modale contacte */}
     const handleModalOpen = () => {
         setIsModalOpen(true);
       };
@@ -27,6 +30,15 @@ const Parallax = () => {
     const closeModal = () => {
       setIsCertifOpen(false);
     };
+
+    {/* Modale who am i */}
+    const openModalwho = () => {
+      setIsWhoOpen(true);
+  };
+
+  const closeModalwho = () => {
+    setIsWhoOpen(false);
+  };
 
 
     return (
@@ -119,20 +131,27 @@ const Parallax = () => {
         </div>
         </div>
 
-        {/**lien Me contacter */}
+        {/**lien menu */}
            <div className='Link'>
+
+           <div >
+            <button className='Modalwho' onClick={openModalwho}>Whoami</button>
+            {isWhoOpen && <Who onClose={closeModalwho} />}
+        </div>
+         
+
+        <div >
+            <button className='ModalCertif' onClick={openModal}>Mes certifications</button>
+            {isCertifOpen && <Certif onClose={closeModal} />}
+        </div>
+
         <button
           
           className='join-bouton'
           onClick={handleModalOpen}
         >
           Me contacter
-        </button>   
-
-        <div >
-            <button className='ModalCertif' onClick={openModal}>Mes certifications</button>
-            {isCertifOpen && <Certif onClose={closeModal} />}
-        </div>
+        </button>  
 
         
 

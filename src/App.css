@@ -225,11 +225,12 @@ body{
   flex-direction: column;
   position: relative;
   margin-left: 39%;
-  top: 89vh;
+  top: 75vh;
 }
 
 *.ModalCertif{
   margin-left: 56px;
+  margin-top: 5%;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.5), 0 0 50px rgba(255, 255, 255, 0.7);
   color: aliceblue;
   background-color: black;
@@ -356,9 +357,26 @@ body{
 }
 
 .join-bouton{
-  margin-top: 55%;
+  margin-top: 5%;
   margin-left: 10%;
   margin-bottom: 30px;
+  width: 230px;
+  height: 40px;
+  box-shadow: 
+      0 0 20px rgba(255, 255, 255, 0.5), 
+      0 0 30px rgba(255, 255, 255, 0.5), 
+      0 0 40px rgba(255, 255, 255, 0.5), 
+      0 0 50px rgba(255, 255, 255, 0.7); 
+      color: aliceblue;
+  background-color: black;
+  border-radius: 10px;
+
+}
+
+.Modalwho{
+  margin-top: 55%;
+  margin-left: 10%;
+  
   width: 230px;
   height: 40px;
   box-shadow: 
@@ -490,7 +508,7 @@ body{
 
       .container {
         position: relative;
-        top: 105vh;
+        top: 95vh;
         left: 150px;
         padding-bottom: 110px;
       }
