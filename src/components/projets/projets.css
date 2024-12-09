@@ -34,6 +34,11 @@
     font-size: 23px;
 }
 
+.meteok{
+    width: 25%;
+    border-radius: 25px;
+}
+
 /* Bouton de fermeture */
 .close-button {
     position: absolute;
