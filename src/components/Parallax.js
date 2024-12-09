@@ -119,11 +119,11 @@ const closeModalComp = () => {
 
         {/** élément tournant */}
         <div className='slider'>
-                <div className='item' style={{ "--position": 1, fontSize: "70px", textShadow: "2px 2px 15px rgba(255, 255, 255, 0.5)" }}>JS</div>
-                <div className='item' style={{ "--position": 3, fontSize: "70px", textShadow: "2px 2px 15px rgba(255, 255, 255, 0.5)" }}>Python</div>
-                <div className='item' style={{ "--position": 2, fontSize: "70px", textShadow: "2px 2px 15px rgba(255, 255, 255, 0.5)" }}>SQL</div>
-                <div className='item' style={{ "--position": 5, fontSize: "70px", textShadow: "2px 2px 15px rgba(255, 255, 255, 0.5)" }}>React</div>
-                <div className='item' style={{ "--position": 4, fontSize: "70px", textShadow: "2px 2px 15px rgba(255, 255, 255, 0.5)" }}>FireBase</div>
+                <div className='item' style={{ "--position": 1, fontSize: "70px", textShadow: "2px 2px 15px rgba(255, 255, 255, 0.5)" }} >0</div>
+                <div className='item' style={{ "--position": 3, fontSize: "70px", textShadow: "2px 2px 15px rgba(255, 255, 255, 0.5)" }}>O</div>
+                <div className='item' style={{ "--position": 2, fontSize: "70px", textShadow: "2px 2px 15px rgba(255, 255, 255, 0.5)" }}>0</div>
+                <div className='item' style={{ "--position": 5, fontSize: "70px", textShadow: "2px 2px 15px rgba(255, 255, 255, 0.5)" }}>O</div>
+                <div className='item' style={{ "--position": 4, fontSize: "70px", textShadow: "2px 2px 15px rgba(255, 255, 255, 0.5)" }}>0</div>
 
              
                 
