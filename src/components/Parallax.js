@@ -6,6 +6,7 @@ import '../App.css'
 import foret from "../images/foret.png"
 import Moine from "../images/moine.jpg"
 import Certif from './Certifications/Certif';
+import Projets from './projets/Projets';
 import Who from './Who/who';
 import Competences from './Competences/competences';
 const Parallax = () => {
@@ -14,6 +15,7 @@ const Parallax = () => {
     const [isCertifOpen, setIsCertifOpen] = useState(false);
     const [isWhoOpen, setIsWhoOpen] = useState(false);
     const [isCompOpen, setIsCompOpen] = useState(false);
+    const [isRealOpen, setIsRealOpen] = useState(false);
 
     {/*Modale contacte */}
     const handleModalOpen = () => {
@@ -49,6 +51,15 @@ const Parallax = () => {
 
 const closeModalComp = () => {
   setIsCompOpen(false);
+};
+
+ {/* Modale réalisations */}
+ const openReal = () => {
+  setIsRealOpen(true);
+};
+
+const closeReal = () => {
+setIsRealOpen(false);
 };
 
 
@@ -159,6 +170,11 @@ const closeModalComp = () => {
         <div >
             <button className='ModalCertif' onClick={openModal}>Mes certifications</button>
             {isCertifOpen && <Certif onClose={closeModal} />}
+        </div>
+
+        <div >
+            <button className='ModalReal' onClick={openReal}>D'autre projets ...</button>
+            {isRealOpen && <Projets onClose={closeReal} />}
         </div>
 
         <button

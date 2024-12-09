@@ -11,8 +11,8 @@ const competences = ({onClose}) => {
                         <div className='comps'>
                     <h3> Developpement</h3>
                     <p>Tailwind/CSS</p>
-                    <p>React.js</p>
-                    <p>Vue.js</p>
+                    <p>React.js / Vue.js</p>
+                    
                     <p>JavaScript/ Python</p>
                     </div>
 
@@ -20,7 +20,7 @@ const competences = ({onClose}) => {
                     <div className='bdd'>
                     <p>Postgres</p>
                     <p>SQL</p>
-                    <p>Axios/fetch</p>
+                    
                     </div>
 
                     <div className='outils'>
@@ -28,7 +28,7 @@ const competences = ({onClose}) => {
                         <p>Firebase</p>
                         <p>VS Code</p>
                         <p>Render</p>
-                        <p>Chat GPT</p>
+                        
                     </div>
                     </div>
 

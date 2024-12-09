@@ -1,3 +1,18 @@
+
+
+Acces aux img bdd :
+psql -U postgres
+\c certif
+SELECT * FROM certif;
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

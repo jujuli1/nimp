@@ -11,6 +11,7 @@ import Who from './components/Who/who';
 
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
+import Projets from './components/projets/Projets';
 
 
 function Model() {
@@ -30,6 +31,7 @@ function App() {
       <Routes>
       <Route path="/contact" element={<Contact />} /> 
       <Route path="/certifications" element={<Certif />} />
+      <Route path="/projets" element={<Projets />} />
       <Route path="/who" element={<Who />} />
       </Routes>
       
