@@ -47,7 +47,7 @@ body{
 }
 .foret4{
   filter: brightness(15%);
-  margin-left: -343px;
+  margin-left: -392px;
 }
 
 
@@ -537,7 +537,7 @@ body{
       .container {
         position: relative;
         top: 90vh;
-        left: 150px;
+        left: 45px;
         padding-bottom: 110px;
       }
       .cup
