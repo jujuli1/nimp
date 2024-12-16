@@ -127,8 +127,10 @@ setIsRealOpen(false);
         {/** élément principale : animation élément tournant + lien github et linkedin + page contacte */}
         <div className='fond'>
         
+        
 
-        {/** élément tournant */}
+          {/** élément tournant */}
+          <div className='content'>
         <div className='slider'>
                 <div className='item' style={{ "--position": 1, fontSize: "70px", textShadow: "2px 2px 15px rgba(255, 255, 255, 0.5)" }} >0</div>
                 <div className='item' style={{ "--position": 3, fontSize: "70px", textShadow: "2px 2px 15px rgba(255, 255, 255, 0.5)" }}>O</div>
@@ -142,11 +144,18 @@ setIsRealOpen(false);
                 
 
                     
-                    </div>
-                    <div className='content'>
-
+                </div>
                 
-                <div className='model'><img className='moine' src={Moine}/></div>
+
+
+        
+
+        
+
+                    
+
+                    <div className='model'><img className='moine' src={Moine}/></div>
+                
             </div>
             <div className='linkedin'><a href='https://www.linkedin.com/in/julien-lefevre-6bab8255'><img className='lkdn' src="https://cdn-icons-png.flaticon.com/512/174/174857.png"/></a></div>
             <div className='github'><a href='https://github.com/jujuli1?tab=repositories'><img className='git' src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"/></a></div>

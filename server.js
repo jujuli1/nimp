@@ -21,6 +21,7 @@ app.get('/api/images', (req, res) => {
     const images = [
         { id: 1, title: 'thm', url: 'https://nimp-1.onrender.com/Pimages/thm.jpg' },
         { id: 2, title: 'tp', url: 'https://nimp-1.onrender.com/Pimages/tp.jpg' },
+        { id: 3, title: 'thm101', url: 'https://nimp-1.onrender.com/Pimages/thm101.png' },
         
       
     ];
