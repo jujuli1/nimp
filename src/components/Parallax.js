@@ -129,8 +129,9 @@ setIsRealOpen(false);
         
         
 
-          {/** élément tournant */}
+          
           <div className='content'>
+            {/** élément tournant 
         <div className='slider'>
                 <div className='item' style={{ "--position": 1, fontSize: "70px", textShadow: "2px 2px 15px rgba(255, 255, 255, 0.5)" }} >0</div>
                 <div className='item' style={{ "--position": 3, fontSize: "70px", textShadow: "2px 2px 15px rgba(255, 255, 255, 0.5)" }}>O</div>
@@ -144,7 +145,7 @@ setIsRealOpen(false);
                 
 
                     
-                </div>
+                </div>*/}
                 
 
 
