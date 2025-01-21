@@ -12,6 +12,13 @@
     z-index: 1000; /* Très haut pour être au-dessus des autres éléments */
 }
 
+@media (max-width: 768px) {
+    .modal-overlay2 {
+     
+        width: 60%;
+    }
+  }
+
 /* Contenu de la modale */
 .modal-content2 {
     background: border-box;
@@ -34,6 +41,14 @@
     font-size: 23px;
 }
 
+@media (max-width: 768px) {
+    .modal-content2 {
+     
+        margin-right: 63vh;
+        height: 35%;
+    }
+  }
+
 /* Bouton de fermeture */
 .close-button {
     position: absolute;
@@ -48,6 +63,12 @@
     z-index: 1002; /* Toujours visible */
 }
 
+@media (max-width: 768px) {
+    .close-button {
+     
+        padding-right: 3vh;
+    }
+  }
 
 
 /* Animation d'apparition */
@@ -74,9 +95,22 @@
 .dev{
     margin-top: 10px;
 }
+@media (max-width: 768px) {
+    .dev {
+     
+        font-size: 2vh;
+    }
+  }
 .pentst{
     margin-top: 10px;
 }
+
+@media (max-width: 768px) {
+    .pentst {
+     
+        font-size: 2vh;
+    }
+  }
 h3{
     margin-bottom: 50px;
 }

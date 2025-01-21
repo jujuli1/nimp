@@ -2,7 +2,7 @@
 
 Acces aux img bdd :
 psql -U postgres
-\c certif
+\c certif   // \c sert a se connecté a la bdd certif
 SELECT * FROM certif;
 
 

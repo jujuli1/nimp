@@ -12,6 +12,15 @@
     
 }
 
+@media (max-width: 768px) {
+    .contact {
+     
+        margin-top: -133vh;
+    }
+  }
+
+
+
 form{
     max-width: 600px;
     width: 100%;

@@ -38,7 +38,7 @@ const Certif = ({ onClose }) => {
             <div className="modal-overlay2">
                 <div className="modal-content2">
                     <button onClick={onClose} className="close-button">X</button>
-                    <h2>Mes certifications</h2>
+                    
                     <div className="images-container">
                         {images.map(image => (
                             <div key={image.id} className="image-item">

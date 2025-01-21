@@ -67,6 +67,14 @@
     line-height: 40px;
 }
 
+@media (max-width: 768px) {
+    .presentationText {
+     
+        font-size: 19px;
+        margin-right: 1vh;
+    }
+  }
+
 .bienvenue{
     margin-bottom: 60px;
 }
