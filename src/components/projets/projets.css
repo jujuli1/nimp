@@ -37,7 +37,24 @@
 .meteok{
     width: 25%;
     border-radius: 25px;
+    margin-right: 20vh;
 }
+
+@media (max-width: 768px) {
+    .meteok {
+     
+        width: 70%;
+    }
+  }
+
+@media (max-width: 768px) {
+    .projets {
+     
+        display: flex;
+    }
+  }
+
+
 
 /* Bouton de fermeture */
 .close-button {
