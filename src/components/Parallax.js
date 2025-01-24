@@ -158,8 +158,13 @@ setIsRealOpen(false);
                     <div className='model'><img className='moine' src={Moine}/></div>
                 
             </div>
+            <div className='job'>
+
             <div className='linkedin'><a href='https://www.linkedin.com/in/julien-lefevre-6bab8255'><img className='lkdn' src="https://cdn-icons-png.flaticon.com/512/174/174857.png"/></a></div>
             <div className='github'><a href='https://github.com/jujuli1?tab=repositories'><img className='git' src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"/></a></div>
+
+            </div>
+            
         </div>
         </div>
 
