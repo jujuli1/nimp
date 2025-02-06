@@ -83,3 +83,7 @@
         transform: scale(1);
     }
 }
+
+.video{
+    width: 45vh;
+}
