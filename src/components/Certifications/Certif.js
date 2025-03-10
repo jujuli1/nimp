@@ -8,6 +8,9 @@ const Certif = ({ onClose }) => {
 
     const [enlargedImage, setEnlargedImage] = useState(null);
     const [enlargedImagetp, setEnlargedImagetp] = useState(null);
+    const [images, setImages] = useState([]);
+    const [loading, setLoading] = useState(true); //chargement
+
 
     const handleImageClick = (image) => {
         setEnlargedImage(image); // Affiche l'image cliquée en grand
@@ -23,14 +26,21 @@ const Certif = ({ onClose }) => {
         setEnlargedImage(null);
         setEnlargedImagetp(null); 
     };
-    const [images, setImages] = useState([]);
+    
 
     useEffect(() => {
         // Récupérer les images depuis api
         fetch('https://nimp-1.onrender.com/api/images')
             .then(response => response.json())
-            .then(data => setImages(data))
-            .catch(error => console.error('Erreur de récupération des images', error));
+            .then(data => {
+                setImages(data)
+                setLoading(false) 
+            })
+            // arret chargement l'orsque img reçut
+            .catch(error => {
+                console.error('Erreur de récupération des images', error)
+                setLoading(false); //arret en cas d'erreur
+            });
     }, []);
 
     return (
@@ -39,6 +49,12 @@ const Certif = ({ onClose }) => {
                 <div className="modal-content2">
                     <button onClick={onClose} className="close-button">X</button>
                     
+                    {loading ? (
+                        <div className="loader-container"> 
+                        <div className='loader'></div>
+
+                        </div>
+                    ) : (
                     <div className="images-container">
                         {images.map(image => (
                             <div key={image.id} className="image-item">
@@ -71,7 +87,7 @@ const Certif = ({ onClose }) => {
                                 
                                 {/*`https://jujuli1.github.io/nimp/images/${image.file_path}` */}
                             </div>
-                        
+                        )}
                     </div>
                 </div>
             </div>
