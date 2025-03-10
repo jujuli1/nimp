@@ -52,7 +52,7 @@ const Certif = ({ onClose }) => {
                     {loading ? (
                         <div className="loader-container"> 
                         <div className='loader'></div>
-                        <p className="loading-text">L'API prend son temp ... </p>
+                        <p className="loading-text">L'API prend son temps ... </p>
 
                         </div>
                     ) : (
