@@ -103,16 +103,18 @@ body{
 }
 
 .light:nth-child(1) {
-  top: 30%;
+  top: 230%;
   left: 5%;
+  animation-delay: 0.4s;
   
   
   
 }
 
 .light:nth-child(2) {
-  top: 40%;
+  top: 230%;
   left: 7%;
+  animation-delay: 1s;
   
   
 }
@@ -122,20 +124,23 @@ body{
   left: 4%;
   width: 20px;
   height: 20px;
+  animation-delay: 2s;
   
 }
 
 .light:nth-child(4) {
-  top: 30%;
+  top: 230%;
   left: 5%;
+  animation-delay: 3s;
   
   
   
 }
 
 .light:nth-child(5) {
-  top: 40%;
+  top: 230%;
   left: 7%;
+  animation-delay: 5s;
   
   
 }
@@ -145,6 +150,7 @@ body{
   left: 4%;
   width: 20px;
   height: 20px;
+  animation-delay: 6s;
   
 }
 
@@ -156,6 +162,7 @@ body{
   left: 8%;
   width: 18px;
   height: 18px;
+  animation-delay: 7s;
  
 }
 
@@ -164,33 +171,34 @@ body{
   left: 5%;
   width: 55px;
   height: 55px;
-  animation-delay: 1s;
+  animation-delay: 8s;
   
 }
 
 .light:nth-child(13) {
-  top: 190%;
+  top: 230%;
   left: 6%;
   width: 15px;
   height: 15px;
+  animation-delay: 9s;
   
 }
 
 .light:nth-child(14) {
-  top: 185%;
+  top: 230%;
   left: 7%;
   width: 25px;
   height: 25px;
-  animation-delay: 0.5s;
+  animation-delay: 10s;
   
 }
 
 .light:nth-child(15) {
-  top: 215%;
+  top: 230%;
   left: 8%;
   width: 25px;
   height: 25px;
-  animation-delay: 1s;
+  animation-delay: 11s;
  
   
 }
@@ -201,29 +209,39 @@ body{
   width: 16px;
   height: 16px;
   opacity: 0.5;
-  animation-delay: 3s;
+  animation-delay: 12s;
   
   
 }
-
 .light:nth-child(17) {
-  top: 226%;
-  left: 9%;
+  top: 225%;
+  left: 4.8%;
   width: 16px;
   height: 16px;
   opacity: 0.5;
-  animation-delay: 10s;
+  animation-delay: 12.5s;
   
   
 }
 
 .light:nth-child(18) {
+  top: 226%;
+  left: 9%;
+  width: 16px;
+  height: 16px;
+  opacity: 0.5;
+  animation-delay: 13s;
+  
+  
+}
+
+.light:nth-child(19) {
   top: 230%;
   left: 6%;
   width: 16px;
   height: 16px;
   opacity: 0.3;
-  animation-delay: 8s;
+  animation-delay: 14s;
   
   
 }

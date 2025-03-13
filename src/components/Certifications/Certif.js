@@ -33,14 +33,22 @@ const Certif = ({ onClose }) => {
         fetch('https://nimp-1.onrender.com/api/images')
             .then(response => response.json())
             .then(data => {
-                setImages(data)
-                setLoading(false) 
+                if (data && data.length > 0) { // Vérifie les imgs
+                    setImages(data);
+                    setLoading(false);
+                } else {
+                    console.warn('Aucune image reçue');
+                } 
             })
             // arret chargement l'orsque img reçut
             .catch(error => {
                 console.error('Erreur de récupération des images', error)
                 setLoading(false); //arret en cas d'erreur
             });
+
+            const timeout = setTimeout(() => setLoading(false), 2000);
+
+            return () => clearTimeout(timeout);
     }, []);
 
     return (
